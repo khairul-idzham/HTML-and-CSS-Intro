@@ -7,5 +7,8 @@
 	<input type="submit" value="Submit">
 </form>
 
+<% unless @url.nil? %> 
 <p> You have inluded <%= @url.long_url %> into the database. </p>
-<p> Your short URL:<a href="<%= @url.short_url %>"><%=@url.short_url %></a></p>
+<p> Your short URL:
+<a href="<%= @url.short_url %>"><%=@url.short_url %></a></p>
+<% end %>
