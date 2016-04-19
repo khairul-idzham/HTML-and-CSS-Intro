@@ -1,8 +1,34 @@
-<html>
-	<head>
-		<title>Sinatra Framework</title>
-	</head>
-	<body>
-		<%= yield %>
-	</body>
-</html>
+<!DOCTYPE html>
+<link rel="stylesheet" type="text/css" href="css/application.css">
+
+<head>
+	<div id='top'>
+	<title>URL Shortener</title>
+	</div>
+</head>
+
+<body>
+<div id="spacer">
+</div>
+
+
+	<header id="head">
+		<h1 id="page-title-center">SHRT.URL.it </h1>
+		<p id="head-para">The ripoff site that works like bitly, but its not bitly!</p>
+	</header>
+
+	<div id="form_container">
+		<form action="/urls" method="post">
+			<input id='short_url_field' type="text" name="long_url" placeholder="Put your link here.">
+			<input id='bttn' type="submit" value="SHRTN!">
+			</form>
+	</div>
+
+	<div id='bottom'>
+	<% unless @url.nil? %> 
+	<p id="output">| <%= @url.long_url %> | <a style="color:orange" href="<%= @url.short_url %>">http://localhost:9393/<%=@url.short_url %></a> </p>
+<% end %>
+
+</body>
+
+

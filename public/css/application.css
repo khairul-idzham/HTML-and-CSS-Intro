@@ -1,0 +1,90 @@
+@import url(https://fonts.googleapis.com/css?family=Pacifico);
+@import url(https://fonts.googleapis.com/css?family=Roboto:400,300);
+@import url(https://fonts.googleapis.com/css?family=PT+Sans+Narrow:700);
+
+head {
+}
+
+#spacer {
+	height: 200px
+}
+
+
+
+
+body {
+	background-color: #ccccff;
+	text-align: center;
+	color:white
+
+}
+
+#page-title-center {
+	font-family: 'PT Sans Narrow'; sans-serif;
+	letter-spacing: 1px;
+	margin-bottom: 0px;
+	font-size:50px;
+}
+
+#head-para {
+	margin-top: 0px;
+	margin-bottom: 50px;
+	letter-spacing:0.8px;
+	font-size: 20px;
+}
+
+#form_container {
+	font-family: Helvetica;
+	border:none;
+
+}
+
+
+#short_url_field {
+  width: 350px;
+  height: 50px;
+  border: none;
+  border-bottom: 1px solid white;
+  color: white;
+  font-size: 20px;
+  padding-left: 20x;
+  padding-bottom: 0px;
+  padding-right: 0px;
+  padding-top: 0px;
+  background-color: #ccccff;
+  text-align: center;
+  letter-spacing: 2px;
+
+}
+
+#bttn {
+	background-color: #ccccff;
+  border: 1px solid white;
+  color: white;
+  padding: 15px 32px;
+  text-align: center;
+  font-family: 'Roboto', sans-serif;
+  display: inline-block;
+  font-size: 16px;
+  -webkit-transition-duration: 0.4s; /* Safari */
+  transition-duration: 0.4s;
+  cursor: pointer;
+}
+
+#bttn:hover {
+	background-color: #FFFFFF;
+  color: #ccccff;
+}
+
+#bottom {
+	margin-top: 70px;
+	height: 200px;
+	
+}
+
+#output {
+	font-family:'PT Sans Narrow',sans-serif;
+	text-decoration: none;
+	font-size: 20px;
+}
+

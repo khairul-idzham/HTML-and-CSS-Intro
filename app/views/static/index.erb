@@ -1,14 +1,25 @@
-<h1>Short URL practice</h1>
-<p>See Me in views/static/index.html.erb</p>
+<!DOCTYPE html>
 
-<form action="/urls" method="post">
-	Enter URL:
-	<input type="text" name="long_url">
-	<input type="submit" value="Submit">
-</form>
+<head>
+	<title>URL Shortener</title>
+</head>
 
-<% unless @url.nil? %> 
-<p> You have inluded <%= @url.long_url %> into the database. </p>
-<p> Your short URL:
-<a href="<%= @url.short_url %>"><%=@url.short_url %></a></p>
-<% end %>
+<body>
+	<header id="container">
+		<h1 class="page-title-center">Short URL practice</h1>
+		<p>See Me in views/static/index.html.erb</p>
+	</header>
+
+	<div id="form_container">
+		<form action="/urls" method="post">
+			<fieldset>
+				<input id='short_url_field' type="text" name="long_url" placeholder="Paste a link to shorten it">
+				<input id='shorten_bttn' type="submit" value="Submit">
+			</fieldset>
+		</form>
+	</div>
+
+
+
+
+</body>
