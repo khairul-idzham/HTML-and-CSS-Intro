@@ -1,25 +1,33 @@
 <!DOCTYPE html>
+<link rel="stylesheet" type="text/css" href="css/application.css">
 
 <head>
+	<div id='top'>
 	<title>URL Shortener</title>
+	</div>
 </head>
 
 <body>
-	<header id="container">
-		<h1 class="page-title-center">Short URL practice</h1>
-		<p>See Me in views/static/index.html.erb</p>
+<div id="spacer_container">
+</div>
+
+
+	<header id="head">
+		<h1 id="page-title-center">SHRT.URL.it </h1>
+		<p id="head-para">The ripoff site that works like bitly, but its not bitly!</p>
 	</header>
 
 	<div id="form_container">
 		<form action="/urls" method="post">
-			<fieldset>
-				<input id='short_url_field' type="text" name="long_url" placeholder="Paste a link to shorten it">
-				<input id='shorten_bttn' type="submit" value="Submit">
-			</fieldset>
-		</form>
+			<input id='short_url_field' type="text" name="long_url" placeholder="Put your link here.">
+			<input id='bttn' type="submit" value="SHRTN!">
+			</form>
 	</div>
 
 
-
+	<div id='bottom'>
+	<% unless @url.nil? %>
+	<p id="output">| <%= @url.long_url %> | <a style="color:orange" href="<%= @url.short_url %>">http://localhost:9393/<%=@url.short_url %></a> </p>
+<% end %>
 
 </body>

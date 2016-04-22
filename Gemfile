@@ -27,6 +27,9 @@ gem 'rspec'
 # Adding byebug for debugging
 gem 'byebug'
 
+# Adding securerandom for URL shortener
+gem 'rubysyl-securerandom'
+
 group :development, :test do
 	# Adding shotgun for local web hosting
 	gem 'shotgun'

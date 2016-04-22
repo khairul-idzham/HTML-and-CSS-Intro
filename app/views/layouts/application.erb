@@ -8,7 +8,7 @@
 </head>
 
 <body>
-<div id="spacer">
+<div id="spacer_container">
 </div>
 
 
@@ -24,11 +24,10 @@
 			</form>
 	</div>
 
+
 	<div id='bottom'>
-	<% unless @url.nil? %> 
+	<% unless @url.nil? %>
 	<p id="output">| <%= @url.long_url %> | <a style="color:orange" href="<%= @url.short_url %>">http://localhost:9393/<%=@url.short_url %></a> </p>
 <% end %>
 
 </body>
-
-

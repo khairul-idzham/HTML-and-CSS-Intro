@@ -1,16 +1,14 @@
-require 'byebug'
-
 get '/' do
 	puts "[LOG] Getting /"
 	puts "[LOG] Params #{params.inspect}"
-  erb :"layouts/application"
+  erb :"static/erb"
 end
 
 post '/urls' do
 	@url = Url.create(long_url: params[:long_url])
 	@url.shorten
 	@url.save
-	erb :"layouts/application"
+	erb :"static/erb"
 end
 
 get '/:short_url' do
@@ -25,7 +23,7 @@ end
 
 
 
-# <!-- 	<% unless @url.nil? %> 
+# <!-- 	<% unless @url.nil? %>
 # 	<p> You have inluded <%= @url.long_url %> into the database. </p>
 # 	<p> Your short URL:<a href="<%= @url.short_url %>"><%=@url.short_url %></a></p>
 # 	<% end %> -->
